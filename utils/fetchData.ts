@@ -1,16 +1,12 @@
 // utils/googleSheets.js
 import { google } from 'googleapis';
-import axios from 'axios';
-import credentials from '../google-api-service.json';
 
 const SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly'];
 
-const { client_email, private_key } = credentials;
-
 const authorize = () => {
   const auth = new google.auth.JWT({
-    email: client_email,
-    key: private_key,
+    email: process.env.client_email,
+    key: process.env.private_key,
     scopes: SCOPES,
   });
 
