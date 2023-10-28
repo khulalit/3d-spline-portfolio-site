@@ -27,7 +27,7 @@ const getSheetData = async () => {
 
     return response.data.values;
   } catch (error) {
-    console.error('Error fetching data from Google Sheets:', error);
+    console.error('Error fetching data from Database :', error);
     return null;
   }
 };
