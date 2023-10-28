@@ -1,0 +1,67 @@
+@import '../../global-styles/variables.scss';
+
+$borderRadius : 50px;
+$cardPadding : 25px;
+
+
+@mixin radius_bg() {
+    border-radius: 83px;
+    background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+}
+.card{
+    min-width: $cardWidth;
+    // height: $cardHeight;
+    background-color: $background;
+    border-radius: $borderRadius 0;
+    box-shadow: $boxShadow;
+    padding: 25px;
+
+    .image{
+        border-radius: calc($borderRadius - $cardPadding) 0 0 0 ;
+    }
+
+    h3{
+        color: #FFF;
+        margin-top: $cardPadding;
+        text-align: center;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 88.5%; /* 31.86px */
+    }
+    
+    h3::after{
+        content: '';
+        display: block;
+        margin: 0 auto;
+        margin-top: $cardPadding;
+        width: calc(0.5*$cardWidth);
+        height: 4px;
+        @include radius_bg();
+    }
+
+    p{
+        color: #FFF;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: $cardPadding;
+    }
+
+    button{
+        @include radius_bg();
+        padding: 8px 30px;
+        margin-top: $cardPadding;
+        color: #FFF;
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    button:hover{
+        transform: translatey(-5px);
+    }
+}

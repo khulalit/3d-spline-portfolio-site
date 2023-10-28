@@ -1,0 +1,41 @@
+@import '../../global-styles/variables.scss';
+$gap-page-nav : 98px;
+$gap-socialmedia-nav : 29px;
+$text-color: white;
+$font-weight: 500;
+$paddingblock : 25px;
+
+.navbar{
+    background-color: $background;
+    display: flex;
+    justify-content: space-around;
+    color: $text-color;
+    font-weight: $font-weight;
+    align-items: center;
+    padding-block: $paddingblock;
+    .page-nav{
+        display: flex;
+        justify-content: space-around;
+        gap: $gap-page-nav;
+        align-items: center;
+    }
+    .socialmedia-nav{
+        display: flex;
+        justify-content: space-around;
+        gap: $gap-socialmedia-nav;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar{
+        
+        .page-nav{
+            display: none;
+            background-color: red;
+        }
+        .socialmedia-nav{
+            display : none;
+        }
+    }
+}

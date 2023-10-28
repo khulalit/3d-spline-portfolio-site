@@ -1,0 +1,19 @@
+$padding : 4rem;
+$padding_mobile : 1rem;
+.sectionpage{
+    padding: $padding;
+    h2{
+        margin-bottom: $padding;
+        color: #FFF;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .sectionpage{
+        padding: $padding_mobile;
+    }
+}

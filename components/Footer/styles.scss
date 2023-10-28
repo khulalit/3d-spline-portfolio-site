@@ -1,0 +1,30 @@
+@import '../../global-styles/variables.scss';
+$gap-page-nav : 98px;
+$gap-socialmedia-nav : 29px;
+$text-color: white;
+$font-weight: 500;
+$paddingblock : 25px;
+
+footer{
+    display: flex;
+    // position: absolute;
+    // bottom: 0;
+    // width: 100%;
+    padding-block: 25px;
+    justify-content: space-evenly;
+    .contact{
+        color: #FFF;
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 88.5%; /* 31.86px */
+    }
+    .socialmedia-nav{
+        display: flex;
+        justify-content: space-around;
+        gap: $gap-socialmedia-nav;
+        align-items: center;
+    }
+}

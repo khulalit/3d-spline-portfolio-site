@@ -1,0 +1,35 @@
+@import '../../global-styles/variables.scss';
+.menu{
+    position: relative;
+    background-color: $background ;
+    button{
+        border-radius: 8px;
+        padding: 5px;
+        &:hover{
+            box-shadow: $boxShadow;
+        }
+    }
+    ul{
+        position: absolute;
+        right: 0;
+        // bottom: 5px;
+        margin-top: 8px;
+        box-shadow: $boxShadow;
+        padding: 1rem;
+        border-radius: 8px;
+        // background-color: red;
+        li{
+            cursor: pointer;
+            margin-top: 1rem;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .menu{
+        display: none;
+    }
+}

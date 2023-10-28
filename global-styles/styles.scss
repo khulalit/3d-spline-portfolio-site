@@ -1,0 +1,42 @@
+@import './variables.scss';
+
+body{
+    background-color: $background;
+}
+
+.gridcard{
+    padding-inline: 4rem;
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 4rem;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+}
+
+.technologies{
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    li{
+        color: #FFF;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        display: inline-block;
+        list-style-type: circle;
+    }
+
+    li::before{
+        content: "";
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        margin-bottom: 3.5px;
+        margin-right: 4px;
+        border-radius: 50%;
+        background-color: white;
+    }
+}
