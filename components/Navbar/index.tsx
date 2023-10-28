@@ -28,7 +28,7 @@ export default function Navbar() {
                     <Link href='/skill'>Technologies</Link>
                 </li>
                 <li>
-                    <Link href='/about-me'>About</Link>
+                    <Link href='/about'>About</Link>
                 </li>
             </ul>
             <ul className='socialmedia-nav'>
